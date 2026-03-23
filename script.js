@@ -1,10 +1,11 @@
 //your JS code here. If required.
-function removeColor(){
-	const select=document.getElementById("colorSelect");
-	const selectIndex=select.selectedIndex;
+function removeColor() {
+  const select = document.getElementById("colorSelect");
+  const selectedIndex = select.selectedIndex;
 
-	if(selectIndex!==-1){
-		select.remove(selectIndex);
-	}
+  if (selectedIndex !== -1) {
+    select.remove(selectedIndex);
+  }
 }
-	document.querySelector('input[type="button"]').addEventListener("click",remove);
+
+document.querySelector('input[type="button"]').addEventListener("click", removeColor);
